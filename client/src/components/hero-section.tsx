@@ -3,9 +3,22 @@ import { Calendar, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import aquagridImg from "@assets/AQUAGRID_1752319094546.jpeg";
 
+// Déclaration TypeScript pour Calendly
+declare global {
+  interface Window {
+    Calendly: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
+
 export default function HeroSection() {
   const openCalendly = () => {
-    alert('Intégration Calendly à venir. Contactez-nous par email ou WhatsApp.');
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/aquagrid/30min'
+      });
+    }
   };
 
   const openWhatsApp = () => {
