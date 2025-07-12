@@ -114,3 +114,4 @@ The application is designed to be easily deployable on Replit with minimal confi
 - **Interface responsive** : Optimisation des boutons CTA pour mobile (12/07/2025)
 - **Témoignages clients** : Personnalisation avec vrais clients marocains et photos d'installations (12/07/2025)
 - **Intégration Calendly** : Fonctionnalité popup pour prise de RDV (calendly.com/aquagrid/30min) (12/07/2025)
+- **Favicon plante** : Création d'un favicon SVG représentant une feuille verte avec goutte d'eau (12/07/2025)
