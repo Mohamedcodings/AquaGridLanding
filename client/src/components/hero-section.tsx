@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Calendar, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import farmAiImg from "@assets/Screenshot 2025-07-12 at 13.12.10_1752318814698.png";
+import aquagridImg from "@assets/AQUAGRID_1752319094546.jpeg";
 
 export default function HeroSection() {
   const openCalendly = () => {
@@ -69,8 +69,8 @@ export default function HeroSection() {
                 <div className="bg-white rounded-[2rem] overflow-hidden aspect-[9/19]">
                   <div className="w-full h-full bg-white flex items-center justify-center p-3">
                     <img 
-                      src={farmAiImg} 
-                      alt="Farm AI Assistant - Assistant IA pour l'agriculture" 
+                      src={aquagridImg} 
+                      alt="AquaGrid - Interface d'irrigation intelligente" 
                       className="w-full h-auto object-contain rounded-lg" 
                       style={{ maxHeight: '90%' }}
                     />
