@@ -2,9 +2,22 @@ import { motion } from "framer-motion";
 import { Wrench, Headphones, TrendingUp, Calendar, MessageSquare, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// Déclaration TypeScript pour Calendly
+declare global {
+  interface Window {
+    Calendly: {
+      initPopupWidget: (options: { url: string }) => void;
+    };
+  }
+}
+
 export default function CTASection() {
   const openCalendly = () => {
-    alert('Intégration Calendly à venir. Contactez-nous par email ou WhatsApp.');
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/aquagrid/30min'
+      });
+    }
   };
 
   const openWhatsApp = () => {
