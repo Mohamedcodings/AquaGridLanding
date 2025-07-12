@@ -67,14 +67,11 @@ export default function HeroSection() {
               {/* Phone frame */}
               <div className="relative bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
                 <div className="bg-white rounded-[2rem] overflow-hidden aspect-[9/19]">
-                  <div className="w-full h-full bg-white flex items-center justify-center p-3">
-                    <img 
-                      src={aquagridImg} 
-                      alt="AquaGrid - Interface d'irrigation intelligente" 
-                      className="w-full h-auto object-contain rounded-lg" 
-                      style={{ maxHeight: '90%' }}
-                    />
-                  </div>
+                  <img 
+                    src={aquagridImg} 
+                    alt="AquaGrid - Interface d'irrigation intelligente" 
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
               </div>
               
