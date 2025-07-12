@@ -28,8 +28,8 @@ export default function HeroSection() {
             </h1>
             
             <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl lg:max-w-none">
-              AquaGrid s'occupe de tout automatiquement : analyse du sol, météo, besoins des cultures. 
-              Vous n'avez plus qu'à profiter des économies d'eau et de meilleurs rendements.
+              Plus besoin de payer quelqu'un pour gérer votre irrigation. AquaGrid s'occupe de tout automatiquement : 
+              analyse du sol, météo, besoins des cultures. Économisez temps, argent et eau.
             </p>
             
             {/* CTA Buttons */}
