@@ -38,7 +38,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center"
           >
-            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
               Laissez notre <span className="text-aqua-green">IA</span> gérer<br />
               votre <span className="text-aqua-blue">irrigation</span>.
             </h1>
