@@ -17,7 +17,7 @@ export default function Footer() {
               className="mb-4"
             >
               <svg 
-                className="h-8 w-auto" 
+                className="h-6 sm:h-7 md:h-8 w-auto" 
                 viewBox="0 13.989999771118164 300.07000732421875 40.8900032043457"
                 xmlns="http://www.w3.org/2000/svg"
               >
