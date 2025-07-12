@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import device1Image from "@assets/device1_1752316731143.jpeg";
+import device2Image from "@assets/device2_1752316731144.jpeg";
+import device3Image from "@assets/device3_1752316731144.jpeg";
 
 export default function TestimonialsSection() {
   const testimonials = [
@@ -7,19 +10,22 @@ export default function TestimonialsSection() {
       name: "Pierre Martin",
       location: "Producteur de tomates, Loire-Atlantique",
       text: "Depuis l'installation d'AquaGrid, j'ai réduit ma consommation d'eau de 45% tout en améliorant la qualité de mes tomates. Le système s'adapte parfaitement aux conditions météo.",
-      device: "Dispositif AquaGrid chez Pierre Martin"
+      device: "Dispositif AquaGrid chez Pierre Martin",
+      image: device1Image
     },
     {
       name: "Marie Dubois",
       location: "Viticultrice, Bourgogne",
       text: "L'application mobile est remarquable. Je peux surveiller mes vignes à distance et recevoir des alertes en temps réel. Un gain de temps considérable !",
-      device: "Dispositif AquaGrid chez Marie Dubois"
+      device: "Dispositif AquaGrid chez Marie Dubois",
+      image: device2Image
     },
     {
       name: "Jean Leroy",
       location: "Céréalier, Beauce",
       text: "Installation rapide et support technique excellent. Mes cultures céréalières n'ont jamais été aussi bien irriguées. Je recommande vivement AquaGrid.",
-      device: "Dispositif AquaGrid chez Jean Leroy"
+      device: "Dispositif AquaGrid chez Jean Leroy",
+      image: device3Image
     }
   ];
 
@@ -50,31 +56,34 @@ export default function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-gray-50 rounded-xl p-6 sm:p-8"
+              className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200"
             >
-              <div className="flex items-center mb-4">
-                <div className="flex text-yellow-400">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-current" />
-                  ))}
-                </div>
+              {/* Device Image */}
+              <div className="h-48 sm:h-56 overflow-hidden">
+                <img 
+                  src={testimonial.image} 
+                  alt={testimonial.device}
+                  className="w-full h-full object-cover"
+                />
               </div>
               
-              <blockquote className="text-gray-700 mb-6 italic">
-                "{testimonial.text}"
-              </blockquote>
-              
-              <div className="flex items-center space-x-4">
-                {/* Device photo placeholder */}
-                <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center border-2 border-gray-300">
-                  <div className="text-center">
-                    <div className="w-6 h-6 bg-aqua-green rounded mx-auto mb-1"></div>
-                    <div className="text-xs text-gray-500">Device</div>
+              {/* Content */}
+              <div className="p-6 sm:p-8">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-current" />
+                    ))}
                   </div>
                 </div>
-                <div>
-                  <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                  <div className="text-gray-600">{testimonial.location}</div>
+                
+                <blockquote className="text-gray-700 mb-6 italic text-sm sm:text-base leading-relaxed">
+                  "{testimonial.text}"
+                </blockquote>
+                
+                <div className="border-t pt-4">
+                  <div className="font-semibold text-gray-900 text-lg">{testimonial.name}</div>
+                  <div className="text-gray-600 text-sm">{testimonial.location}</div>
                 </div>
               </div>
             </motion.div>
