@@ -15,11 +15,11 @@ export default function CTASection() {
     {
       icon: Wrench,
       title: "Installation gratuite",
-      subtitle: "Valeur 500€"
+      subtitle: "Valeur 2000€"
     },
     {
       icon: Headphones,
-      title: "Support prioritaire",
+      title: "Support premium",
       subtitle: "3 mois inclus"
     },
     {
