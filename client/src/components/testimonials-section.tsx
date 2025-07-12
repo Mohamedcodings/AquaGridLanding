@@ -42,9 +42,7 @@ export default function TestimonialsSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Ils nous font confiance
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Découvrez comment AquaGrid transforme le quotidien des agriculteurs partout en France
-          </p>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">Découvrez comment AquaGrid transforme le quotidien des agriculteurs.</p>
         </motion.div>
         
         {/* Testimonials Grid */}
