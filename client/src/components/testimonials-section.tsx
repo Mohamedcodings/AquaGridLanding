@@ -9,22 +9,22 @@ export default function TestimonialsSection() {
     {
       name: "Pierre Martin",
       location: "Producteur de tomates, Loire-Atlantique",
-      text: "Depuis l'installation d'AquaGrid, j'ai réduit ma consommation d'eau de 45% tout en améliorant la qualité de mes tomates. Le système s'adapte parfaitement aux conditions météo.",
-      device: "Dispositif AquaGrid chez Pierre Martin",
+      text: "Installation en 2h chrono ! L'équipe AquaGrid a été d'une efficacité remarquable. Le système fonctionne parfaitement dès le premier jour et me simplifie vraiment la vie.",
+      device: "Installation AquaGrid chez Pierre Martin",
       image: device1Image
     },
     {
       name: "Marie Dubois",
       location: "Viticultrice, Bourgogne",
-      text: "L'application mobile est remarquable. Je peux surveiller mes vignes à distance et recevoir des alertes en temps réel. Un gain de temps considérable !",
-      device: "Dispositif AquaGrid chez Marie Dubois",
+      text: "Enfin une solution qui simplifie mon quotidien ! Plus besoin de courir dans les vignes, tout se contrôle depuis mon téléphone. Le support client répond en moins de 30 minutes.",
+      device: "Solution AquaGrid chez Marie Dubois",
       image: device2Image
     },
     {
       name: "Jean Leroy",
       location: "Céréalier, Beauce",
-      text: "Installation rapide et support technique excellent. Mes cultures céréalières n'ont jamais été aussi bien irriguées. Je recommande vivement AquaGrid.",
-      device: "Dispositif AquaGrid chez Jean Leroy",
+      text: "Mise en service ultra-rapide et formation claire. AquaGrid a transformé ma façon de travailler - tout est automatisé et je gagne un temps précieux chaque jour.",
+      device: "Système AquaGrid chez Jean Leroy",
       image: device3Image
     }
   ];
