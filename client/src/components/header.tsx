@@ -46,8 +46,8 @@ export default function Header() {
           <div className="flex items-center space-x-3">
             {/* WhatsApp Button */}
             <Button
-              variant="ghost"
-              className="hidden sm:flex items-center text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all duration-200"
+              variant="outline"
+              className="hidden sm:flex items-center text-gray-700 hover:text-green-600 hover:bg-green-50 border-2 border-green-500 hover:border-green-600 transition-all duration-200"
               onClick={openWhatsApp}
             >
               <SiWhatsapp className="w-5 h-5 mr-2 text-green-500" />
@@ -56,9 +56,9 @@ export default function Header() {
             
             {/* Mobile WhatsApp Icon */}
             <Button
-              variant="ghost"
+              variant="outline"
               size="icon"
-              className="sm:hidden text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all duration-200"
+              className="sm:hidden text-gray-700 hover:text-green-600 hover:bg-green-50 border-2 border-green-500 hover:border-green-600 transition-all duration-200"
               onClick={openWhatsApp}
             >
               <SiWhatsapp className="w-6 h-6 text-green-500" />
