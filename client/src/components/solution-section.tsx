@@ -128,41 +128,57 @@ export default function SolutionSection() {
               </div>
             </div>
             
-            {/* App Screenshots */}
+            {/* Dashboard Screenshots */}
             <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
-                {/* Phone mockup 1 */}
+              <div className="grid md:grid-cols-2 gap-8">
+                {/* Dashboard Card 1 */}
                 <motion.div 
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="bg-gray-900 rounded-2xl p-1 shadow-lg"
+                  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-gray-50 shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
-                  <div className="bg-white rounded-xl overflow-hidden aspect-[9/16]">
-                    <img 
-                      src={schedules3Img} 
-                      alt="Gestion des horaires d'irrigation AquaGrid" 
-                      className="w-full h-full object-cover" 
-                    />
+                  <div className="absolute inset-0 bg-gradient-to-br from-aqua-green/5 to-transparent"></div>
+                  <div className="relative p-6">
+                    <div className="mb-4">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Performance des Zones</h4>
+                      <p className="text-sm text-gray-600">Suivi en temps réel de l'efficacité par zone</p>
+                    </div>
+                    <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                      <img 
+                        src={schedules3Img} 
+                        alt="Performance des zones d'irrigation AquaGrid" 
+                        className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" 
+                      />
+                    </div>
                   </div>
+                  <div className="absolute top-4 right-4 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
                 </motion.div>
                 
-                {/* Phone mockup 2 */}
+                {/* Dashboard Card 2 */}
                 <motion.div 
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="bg-gray-900 rounded-2xl p-1 shadow-lg mt-8"
+                  className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white to-gray-50 shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
-                  <div className="bg-white rounded-xl overflow-hidden aspect-[9/16]">
-                    <img 
-                      src={schedules2Img} 
-                      alt="Analytics et suivi d'irrigation AquaGrid" 
-                      className="w-full h-full object-cover" 
-                    />
+                  <div className="absolute inset-0 bg-gradient-to-br from-aqua-blue/5 to-transparent"></div>
+                  <div className="relative p-6">
+                    <div className="mb-4">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Analytics Avancées</h4>
+                      <p className="text-sm text-gray-600">Analyse détaillée de la consommation d'eau</p>
+                    </div>
+                    <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm">
+                      <img 
+                        src={schedules2Img} 
+                        alt="Analytics et suivi d'irrigation AquaGrid" 
+                        className="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500" 
+                      />
+                    </div>
                   </div>
+                  <div className="absolute top-4 right-4 w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
                 </motion.div>
               </div>
             </div>
