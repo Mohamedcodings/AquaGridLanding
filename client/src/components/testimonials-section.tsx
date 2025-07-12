@@ -7,24 +7,24 @@ import device3Image from "@assets/device3_1752316731144.jpeg";
 export default function TestimonialsSection() {
   const testimonials = [
     {
-      name: "Pierre Martin",
+      name: "Ahmed Benali",
       location: "Producteur de tomates, Loire-Atlantique",
       text: "Installation rapide ! L'équipe AquaGrid a été d'une efficacité remarquable. Le système fonctionne parfaitement dès le premier jour et me simplifie vraiment la vie.",
-      device: "Installation AquaGrid chez Pierre Martin",
+      device: "Installation AquaGrid chez Ahmed Benali",
       image: device1Image
     },
     {
-      name: "Marie Dubois",
+      name: "Fatima El Mansouri",
       location: "Viticultrice, Bourgogne",
-      text: "Enfin une solution qui simplifie mon quotidien ! Plus besoin de courir dans les vignes, tout se contrôle depuis mon téléphone. Le support client répond en moins de 30 minutes.",
-      device: "Solution AquaGrid chez Marie Dubois",
+      text: "Enfin une solution qui simplifie mon quotidien ! Plus besoin de courir après les vannes, tout se contrôle depuis mon téléphone. Le support client répond en moins de 30 minutes.",
+      device: "Solution AquaGrid chez Fatima El Mansouri",
       image: device2Image
     },
     {
-      name: "Jean Leroy",
+      name: "Youssef Amrani",
       location: "Céréalier, Beauce",
       text: "Mise en service ultra-rapide et formation claire. AquaGrid a transformé ma façon de travailler - tout est automatisé et je gagne un temps précieux chaque jour.",
-      device: "Système AquaGrid chez Jean Leroy",
+      device: "Système AquaGrid chez Youssef Amrani",
       image: device3Image
     }
   ];
