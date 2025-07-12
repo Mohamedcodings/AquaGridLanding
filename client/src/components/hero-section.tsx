@@ -35,7 +35,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-center lg:text-left order-2 lg:order-1"
+            className="text-center lg:text-left order-1 lg:order-1"
           >
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Laissez notre <span className="text-aqua-green">IA</span> gérer<br />
@@ -75,7 +75,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative order-1 lg:order-2 flex justify-center lg:justify-end"
+            className="relative order-2 lg:order-2 flex justify-center lg:justify-end"
           >
             <div className="relative w-72 sm:w-80 lg:w-96">
               {/* Phone frame */}
