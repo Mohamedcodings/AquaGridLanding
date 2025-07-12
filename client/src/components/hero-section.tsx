@@ -23,13 +23,13 @@ export default function HeroSection() {
             className="text-center lg:text-left"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              Optimisez chaque <span className="text-aqua-green">goutte</span>.<br />
-              Irriguez plus <span className="text-aqua-blue">intelligemment</span>.
+              Laissez notre <span className="text-aqua-green">IA</span> gérer<br />
+              votre <span className="text-aqua-blue">irrigation</span>.
             </h1>
             
             <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl lg:max-w-none">
-              AquaGrid révolutionne l'irrigation agricole grâce à l'intelligence artificielle. 
-              Économisez jusqu'à 40% d'eau tout en optimisant vos rendements.
+              AquaGrid s'occupe de tout automatiquement : analyse du sol, météo, besoins des cultures. 
+              Vous n'avez plus qu'à profiter des économies d'eau et de meilleurs rendements.
             </p>
             
             {/* CTA Buttons */}
