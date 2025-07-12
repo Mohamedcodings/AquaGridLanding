@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Brain, Smartphone, Leaf, CheckCircle } from "lucide-react";
 import schedules3Img from "@assets/Schedules - Agricultural IoT 3_1752319512209.jpeg";
-import schedules2Img from "@assets/Schedules - Agricultural IoT 2_1752319428935.jpeg";
+import schedules2Img from "../assets/analytics-screen.jpg";
 
 export default function SolutionSection() {
   return (
