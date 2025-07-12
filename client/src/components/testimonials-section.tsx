@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
     {
       name: "Pierre Martin",
       location: "Producteur de tomates, Loire-Atlantique",
-      text: "Installation en 2h chrono ! L'équipe AquaGrid a été d'une efficacité remarquable. Le système fonctionne parfaitement dès le premier jour et me simplifie vraiment la vie.",
+      text: "Installation rapide ! L'équipe AquaGrid a été d'une efficacité remarquable. Le système fonctionne parfaitement dès le premier jour et me simplifie vraiment la vie.",
       device: "Installation AquaGrid chez Pierre Martin",
       image: device1Image
     },
