@@ -90,18 +90,19 @@ export default function CTASection() {
               Choisissez votre mode de contact préféré
             </h3>
             
-            <div className="grid sm:grid-cols-2 gap-6 mb-8">
+            <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-8">
               {/* Calendly Option */}
               <div className="text-center">
                 <Button
                   size="lg"
-                  className="w-full bg-aqua-green hover:bg-aqua-green-dark text-white px-8 py-4 font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg mb-4"
+                  className="w-full bg-aqua-green hover:bg-aqua-green-dark text-white px-4 sm:px-6 py-3 sm:py-4 font-semibold text-sm sm:text-base md:text-lg transition-all duration-200 transform hover:scale-105 shadow-lg mb-4"
                   onClick={openCalendly}
                 >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Réserver une démo en ligne
+                  <Calendar className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
+                  <span className="hidden sm:inline">Réserver une démo en ligne</span>
+                  <span className="sm:hidden">Démo en ligne</span>
                 </Button>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm">
                   Planifiez un créneau qui vous convient.<br />
                   Démo personnalisée de 30 minutes.
                 </p>
@@ -111,13 +112,14 @@ export default function CTASection() {
               <div className="text-center">
                 <Button
                   size="lg"
-                  className="w-full bg-green-500 hover:bg-green-600 text-white px-8 py-4 font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg mb-4"
+                  className="w-full bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-3 sm:py-4 font-semibold text-sm sm:text-base md:text-lg transition-all duration-200 transform hover:scale-105 shadow-lg mb-4"
                   onClick={openWhatsApp}
                 >
-                  <SiWhatsapp className="w-6 h-6 mr-2" />
-                  Contact immédiat WhatsApp
+                  <SiWhatsapp className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 mr-2" />
+                  <span className="hidden sm:inline">Contact immédiat WhatsApp</span>
+                  <span className="sm:hidden">WhatsApp</span>
                 </Button>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-xs sm:text-sm">
                   Réponse rapide et conseils directs.<br />
                   Disponible 7j/7 de 8h à 20h.
                 </p>
