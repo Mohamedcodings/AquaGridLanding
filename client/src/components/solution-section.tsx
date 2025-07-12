@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Brain, Smartphone, Leaf, CheckCircle } from "lucide-react";
+import schedulesImg from "@assets/Schedules - Agricultural IoT_1752319344727.jpeg";
 
 export default function SolutionSection() {
   return (
@@ -138,12 +139,11 @@ export default function SolutionSection() {
                   className="bg-gray-900 rounded-2xl p-1 shadow-lg"
                 >
                   <div className="bg-white rounded-xl overflow-hidden aspect-[9/16]">
-                    <div className="w-full h-full bg-gradient-to-br from-aqua-green-light to-white flex items-center justify-center">
-                      <div className="text-center p-4">
-                        <Smartphone className="w-8 h-8 text-aqua-green mx-auto mb-2" />
-                        <p className="text-gray-600 text-xs">Gestion par zones</p>
-                      </div>
-                    </div>
+                    <img 
+                      src={schedulesImg} 
+                      alt="Gestion des horaires d'irrigation AquaGrid" 
+                      className="w-full h-full object-cover" 
+                    />
                   </div>
                 </motion.div>
                 
