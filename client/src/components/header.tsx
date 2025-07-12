@@ -35,11 +35,48 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-aqua-green to-aqua-green-dark rounded-lg flex items-center justify-center">
-              <Droplets className="text-white w-4 h-4" />
+          <div className="flex items-center space-x-3">
+            <div className="relative">
+              {/* Logo SVG */}
+              <svg width="40" height="40" viewBox="0 0 40 40" className="drop-shadow-sm">
+                {/* Background circle with gradient */}
+                <defs>
+                  <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#10B981" />
+                    <stop offset="100%" stopColor="#059669" />
+                  </linearGradient>
+                  <linearGradient id="dropGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#3B82F6" />
+                    <stop offset="100%" stopColor="#1D4ED8" />
+                  </linearGradient>
+                </defs>
+                
+                {/* Background */}
+                <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" />
+                
+                {/* Grid pattern */}
+                <g stroke="rgba(255,255,255,0.3)" strokeWidth="1" fill="none">
+                  <line x1="8" y1="12" x2="32" y2="12" />
+                  <line x1="8" y1="20" x2="32" y2="20" />
+                  <line x1="8" y1="28" x2="32" y2="28" />
+                  <line x1="12" y1="8" x2="12" y2="32" />
+                  <line x1="20" y1="8" x2="20" y2="32" />
+                  <line x1="28" y1="8" x2="28" y2="32" />
+                </g>
+                
+                {/* Water drops */}
+                <ellipse cx="16" cy="15" rx="2" ry="3" fill="url(#dropGradient)" />
+                <ellipse cx="24" cy="18" rx="1.5" ry="2.5" fill="url(#dropGradient)" />
+                <ellipse cx="20" cy="25" rx="2.5" ry="3.5" fill="url(#dropGradient)" />
+                
+                {/* Highlight */}
+                <circle cx="20" cy="20" r="17" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
+              </svg>
             </div>
-            <span className="text-xl sm:text-2xl font-bold text-gray-900">AquaGrid</span>
+            <div className="flex flex-col">
+              <span className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">AquaGrid</span>
+              <span className="text-xs text-gray-500 font-medium -mt-1">Smart Irrigation</span>
+            </div>
           </div>
           
           {/* Contact Buttons */}
