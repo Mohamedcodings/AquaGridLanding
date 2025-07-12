@@ -121,7 +121,7 @@ export default function CTASection() {
                 </Button>
                 <p className="text-gray-600 text-xs sm:text-sm">
                   Réponse rapide et conseils directs.<br />
-                  Disponible 7j/7 de 8h à 20h.
+                  Réponses 24/7.
                 </p>
               </div>
             </div>
