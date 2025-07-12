@@ -130,66 +130,56 @@ export default function SolutionSection() {
             
             {/* App Screenshots */}
             <div className="relative">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-2xl mx-auto">
-                {/* Phone mockup 1 */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                {/* Clean mockup 1 */}
                 <motion.div 
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
+                  transition={{ duration: 0.7, delay: 0.2 }}
                   className="relative group"
                 >
-                  {/* Phone frame with premium design */}
-                  <div className="relative bg-gradient-to-b from-gray-800 to-black rounded-[2.5rem] p-3 shadow-2xl transform group-hover:scale-105 transition-all duration-300">
-                    {/* Screen bezel */}
-                    <div className="bg-black rounded-[2rem] p-1">
-                      {/* Dynamic island */}
-                      <div className="relative bg-white rounded-[1.75rem] overflow-hidden">
-                        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-20 h-6 bg-black rounded-full z-10"></div>
-                        <img 
-                          src={schedules3Img} 
-                          alt="Performance des zones d'irrigation AquaGrid" 
-                          className="w-full aspect-[9/19] object-cover" 
-                        />
+                  <div className="relative bg-white rounded-3xl p-2 shadow-lg border border-gray-100 group-hover:shadow-xl transition-all duration-500">
+                    <div className="bg-gray-50 rounded-2xl overflow-hidden">
+                      <div className="h-8 bg-white flex items-center justify-center relative">
+                        <div className="w-16 h-4 bg-gray-900 rounded-full"></div>
                       </div>
+                      <img 
+                        src={schedules3Img} 
+                        alt="Performance des zones d'irrigation AquaGrid" 
+                        className="w-full aspect-[9/16] object-cover" 
+                      />
                     </div>
-                    {/* Floating notification */}
-                    <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-500 rounded-full border-2 border-white animate-pulse shadow-lg"></div>
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </motion.div>
                 
-                {/* Phone mockup 2 */}
+                {/* Clean mockup 2 */}
                 <motion.div 
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  className="relative group mt-8 sm:mt-0"
+                  transition={{ duration: 0.7, delay: 0.4 }}
+                  className="relative group sm:mt-12"
                 >
-                  {/* Phone frame with premium design */}
-                  <div className="relative bg-gradient-to-b from-gray-800 to-black rounded-[2.5rem] p-3 shadow-2xl transform group-hover:scale-105 transition-all duration-300">
-                    {/* Screen bezel */}
-                    <div className="bg-black rounded-[2rem] p-1">
-                      {/* Dynamic island */}
-                      <div className="relative bg-white rounded-[1.75rem] overflow-hidden">
-                        <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-20 h-6 bg-black rounded-full z-10"></div>
-                        <img 
-                          src={schedules2Img} 
-                          alt="Analytics et suivi d'irrigation AquaGrid" 
-                          className="w-full aspect-[9/19] object-cover" 
-                        />
+                  <div className="relative bg-white rounded-3xl p-2 shadow-lg border border-gray-100 group-hover:shadow-xl transition-all duration-500">
+                    <div className="bg-gray-50 rounded-2xl overflow-hidden">
+                      <div className="h-8 bg-white flex items-center justify-center relative">
+                        <div className="w-16 h-4 bg-gray-900 rounded-full"></div>
                       </div>
+                      <img 
+                        src={schedules2Img} 
+                        alt="Analytics et suivi d'irrigation AquaGrid" 
+                        className="w-full aspect-[9/16] object-cover" 
+                      />
                     </div>
-                    {/* Floating notification */}
-                    <div className="absolute -top-2 -right-2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white animate-pulse shadow-lg"></div>
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center shadow-lg">
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </motion.div>
-              </div>
-              
-              {/* Background elements */}
-              <div className="absolute inset-0 -z-10">
-                <div className="absolute top-1/4 left-0 w-32 h-32 bg-aqua-green/10 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-1/4 right-0 w-40 h-40 bg-aqua-blue/10 rounded-full blur-3xl"></div>
               </div>
             </div>
           </div>
