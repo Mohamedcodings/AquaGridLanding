@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Droplets, MessageSquare, Calendar } from "lucide-react";
+import { Droplets, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SiWhatsapp } from "react-icons/si";
 
 // Déclaration TypeScript pour Calendly
 declare global {
@@ -46,10 +47,10 @@ export default function Header() {
             {/* WhatsApp Button */}
             <Button
               variant="ghost"
-              className="hidden sm:flex items-center text-gray-700 hover:text-aqua-green"
+              className="hidden sm:flex items-center text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all duration-200"
               onClick={openWhatsApp}
             >
-              <MessageSquare className="w-4 h-4 mr-2 text-green-500" />
+              <SiWhatsapp className="w-5 h-5 mr-2 text-green-500" />
               <span>WhatsApp</span>
             </Button>
             
@@ -57,10 +58,10 @@ export default function Header() {
             <Button
               variant="ghost"
               size="icon"
-              className="sm:hidden text-gray-700 hover:text-aqua-green"
+              className="sm:hidden text-gray-700 hover:text-green-600 hover:bg-green-50 transition-all duration-200"
               onClick={openWhatsApp}
             >
-              <MessageSquare className="w-5 h-5 text-green-500" />
+              <SiWhatsapp className="w-6 h-6 text-green-500" />
             </Button>
             
             {/* Calendly Button */}

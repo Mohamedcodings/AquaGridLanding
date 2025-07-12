@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Calendar, MessageSquare } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SiWhatsapp } from "react-icons/si";
 import aquagridImg from "@assets/AQUAGRID_1752319094546.jpeg";
 
 // Déclaration TypeScript pour Calendly
@@ -60,10 +61,10 @@ export default function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-aqua-green text-aqua-green hover:bg-aqua-green hover:text-white px-6 py-3 font-semibold text-base transition-all duration-200"
+                className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-6 py-3 font-semibold text-base transition-all duration-200 shadow-lg"
                 onClick={openWhatsApp}
               >
-                <MessageSquare className="w-5 h-5 mr-2" />
+                <SiWhatsapp className="w-5 h-5 mr-2" />
                 Contact WhatsApp
               </Button>
             </div>

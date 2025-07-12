@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Droplets, Mail, Phone, MessageSquare, Instagram } from "lucide-react";
+import { Droplets, Mail, Phone, Instagram } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -46,10 +47,10 @@ export default function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="https://wa.me/33753482970" 
-                 className="text-gray-400 hover:text-white transition-colors duration-200"
+                 className="text-gray-400 hover:text-green-400 transition-colors duration-200"
                  target="_blank"
                  rel="noopener noreferrer">
-                <MessageSquare className="w-5 h-5" />
+                <SiWhatsapp className="w-5 h-5" />
               </a>
               <a href="mailto:contact@aquagrid.fr" 
                  className="text-gray-400 hover:text-white transition-colors duration-200">
@@ -82,9 +83,9 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <MessageSquare className="w-4 h-4 inline mr-2" />
+                <SiWhatsapp className="w-4 h-4 inline mr-2 text-green-400" />
                 <a href="https://wa.me/33753482970" 
-                   className="hover:text-white transition-colors duration-200"
+                   className="hover:text-green-400 transition-colors duration-200"
                    target="_blank"
                    rel="noopener noreferrer">
                   WhatsApp

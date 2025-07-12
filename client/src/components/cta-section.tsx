@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Wrench, Headphones, TrendingUp, Calendar, MessageSquare, Mail, Phone } from "lucide-react";
+import { Wrench, Headphones, TrendingUp, Calendar, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SiWhatsapp } from "react-icons/si";
 
 // Déclaration TypeScript pour Calendly
 declare global {
@@ -113,7 +114,7 @@ export default function CTASection() {
                   className="w-full bg-green-500 hover:bg-green-600 text-white px-8 py-4 font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg mb-4"
                   onClick={openWhatsApp}
                 >
-                  <MessageSquare className="w-5 h-5 mr-2" />
+                  <SiWhatsapp className="w-6 h-6 mr-2" />
                   Contact immédiat WhatsApp
                 </Button>
                 <p className="text-gray-600 text-sm">
