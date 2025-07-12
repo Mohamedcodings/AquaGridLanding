@@ -36,7 +36,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-xl sm:text-2xl font-bold text-gray-900">AquaGrid</span>
+            <img 
+              src="/assets/aquagrid-logo.svg" 
+              alt="AquaGrid" 
+              className="h-8 sm:h-10 w-auto"
+            />
           </div>
           
           {/* Contact Buttons */}

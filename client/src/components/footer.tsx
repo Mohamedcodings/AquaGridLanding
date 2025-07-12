@@ -16,7 +16,11 @@ export default function Footer() {
               transition={{ duration: 0.6 }}
               className="mb-4"
             >
-              <span className="text-xl font-bold">AquaGrid</span>
+              <img 
+                src="/assets/aquagrid-logo.svg" 
+                alt="AquaGrid" 
+                className="h-8 w-auto filter invert"
+              />
             </motion.div>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}

@@ -104,3 +104,13 @@ The application follows a modern full-stack architecture with clear separation b
 - **Cartographer**: Replit-specific tooling integration
 
 The application is designed to be easily deployable on Replit with minimal configuration, requiring only the DATABASE_URL environment variable to be set for full functionality.
+
+## Recent Changes
+
+### Juillet 2025
+- **Logo AquaGrid** : Intégration du logo SVG officiel dans header et footer (12/07/2025)
+- **Réseaux sociaux** : Remplacement Instagram par LinkedIn (mohamed-zaidi) (12/07/2025)
+- **Disponibilité WhatsApp** : Mise à jour vers "Réponses 24/7" (12/07/2025)
+- **Interface responsive** : Optimisation des boutons CTA pour mobile (12/07/2025)
+- **Témoignages clients** : Personnalisation avec vrais clients marocains et photos d'installations (12/07/2025)
+- **Intégration Calendly** : Fonctionnalité popup pour prise de RDV (calendly.com/aquagrid/30min) (12/07/2025)
