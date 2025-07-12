@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Calendar, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import applicationImg from "@assets/application1_1752318242773.png";
 
 export default function HeroSection() {
   const openCalendly = () => {
@@ -65,15 +66,12 @@ export default function HeroSection() {
             <div className="relative w-72 sm:w-80 lg:w-96">
               {/* Phone frame */}
               <div className="relative bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl">
-                <div className="bg-white rounded-[2rem] overflow-hidden aspect-[9/19]">
-                  <div className="w-full h-full bg-gradient-to-br from-aqua-green-light to-white flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <div className="w-16 h-16 bg-aqua-green rounded-full flex items-center justify-center mx-auto mb-4">
-                        <span className="text-white text-xl font-bold">AG</span>
-                      </div>
-                      <p className="text-gray-600 text-sm">Interface AquaGrid</p>
-                    </div>
-                  </div>
+                <div className="bg-white rounded-[2rem] overflow-hidden">
+                  <img 
+                    src={applicationImg} 
+                    alt="Interface AquaGrid - Tableau de bord" 
+                    className="w-full h-auto object-cover" 
+                  />
                 </div>
               </div>
               
