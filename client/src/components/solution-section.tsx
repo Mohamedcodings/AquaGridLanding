@@ -131,7 +131,7 @@ export default function SolutionSection() {
             {/* App Screenshots */}
             <div className="relative">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                {/* Clean mockup 1 */}
+                {/* Phone mockup 1 */}
                 <motion.div 
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -139,24 +139,31 @@ export default function SolutionSection() {
                   transition={{ duration: 0.7, delay: 0.2 }}
                   className="relative group"
                 >
-                  <div className="relative bg-white rounded-3xl p-2 shadow-lg border border-gray-100 group-hover:shadow-xl transition-all duration-500">
-                    <div className="bg-gray-50 rounded-2xl overflow-hidden">
-                      <div className="h-8 bg-white flex items-center justify-center relative">
-                        <div className="w-16 h-4 bg-gray-900 rounded-full"></div>
+                  {/* Phone frame */}
+                  <div className="relative bg-gray-900 rounded-[2.75rem] p-2 shadow-2xl group-hover:shadow-3xl transition-all duration-500">
+                    {/* Screen */}
+                    <div className="bg-black rounded-[2.25rem] p-1">
+                      <div className="relative bg-white rounded-[2rem] overflow-hidden">
+                        {/* Status bar */}
+                        <div className="h-8 bg-white flex items-center justify-center relative z-10">
+                          <div className="w-16 h-4 bg-gray-900 rounded-full"></div>
+                        </div>
+                        <img 
+                          src={schedules3Img} 
+                          alt="Performance des zones d'irrigation AquaGrid" 
+                          className="w-full aspect-[9/16] object-cover" 
+                        />
                       </div>
-                      <img 
-                        src={schedules3Img} 
-                        alt="Performance des zones d'irrigation AquaGrid" 
-                        className="w-full aspect-[9/16] object-cover" 
-                      />
                     </div>
+                    {/* Home indicator */}
+                    <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-gray-600 rounded-full"></div>
                   </div>
                   <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                   </div>
                 </motion.div>
                 
-                {/* Clean mockup 2 */}
+                {/* Phone mockup 2 */}
                 <motion.div 
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -164,17 +171,24 @@ export default function SolutionSection() {
                   transition={{ duration: 0.7, delay: 0.4 }}
                   className="relative group sm:mt-12"
                 >
-                  <div className="relative bg-white rounded-3xl p-2 shadow-lg border border-gray-100 group-hover:shadow-xl transition-all duration-500">
-                    <div className="bg-gray-50 rounded-2xl overflow-hidden">
-                      <div className="h-8 bg-white flex items-center justify-center relative">
-                        <div className="w-16 h-4 bg-gray-900 rounded-full"></div>
+                  {/* Phone frame */}
+                  <div className="relative bg-gray-900 rounded-[2.75rem] p-2 shadow-2xl group-hover:shadow-3xl transition-all duration-500">
+                    {/* Screen */}
+                    <div className="bg-black rounded-[2.25rem] p-1">
+                      <div className="relative bg-white rounded-[2rem] overflow-hidden">
+                        {/* Status bar */}
+                        <div className="h-8 bg-white flex items-center justify-center relative z-10">
+                          <div className="w-16 h-4 bg-gray-900 rounded-full"></div>
+                        </div>
+                        <img 
+                          src={schedules2Img} 
+                          alt="Analytics et suivi d'irrigation AquaGrid" 
+                          className="w-full aspect-[9/16] object-cover" 
+                        />
                       </div>
-                      <img 
-                        src={schedules2Img} 
-                        alt="Analytics et suivi d'irrigation AquaGrid" 
-                        className="w-full aspect-[9/16] object-cover" 
-                      />
                     </div>
+                    {/* Home indicator */}
+                    <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-gray-600 rounded-full"></div>
                   </div>
                   <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center shadow-lg">
                     <div className="w-2 h-2 bg-white rounded-full"></div>
