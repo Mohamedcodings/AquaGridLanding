@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Brain, Smartphone, Leaf, CheckCircle } from "lucide-react";
-import schedulesImg from "@assets/Schedules - Agricultural IoT_1752319344727.jpeg";
+import schedules3Img from "@assets/Schedules - Agricultural IoT 3_1752319512209.jpeg";
 import schedules2Img from "@assets/Schedules - Agricultural IoT 2_1752319428935.jpeg";
 
 export default function SolutionSection() {
@@ -141,7 +141,7 @@ export default function SolutionSection() {
                 >
                   <div className="bg-white rounded-xl overflow-hidden aspect-[9/16]">
                     <img 
-                      src={schedulesImg} 
+                      src={schedules3Img} 
                       alt="Gestion des horaires d'irrigation AquaGrid" 
                       className="w-full h-full object-cover" 
                     />
