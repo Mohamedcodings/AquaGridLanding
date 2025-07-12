@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Droplets, Mail, Phone, Instagram } from "lucide-react";
-import { SiWhatsapp } from "react-icons/si";
+import { Mail, Phone } from "lucide-react";
+import { SiWhatsapp, SiLinkedin } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -14,11 +14,8 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="flex items-center space-x-2 mb-4"
+              className="mb-4"
             >
-              <div className="w-8 h-8 bg-gradient-to-br from-aqua-green to-aqua-green-dark rounded-lg flex items-center justify-center">
-                <Droplets className="text-white w-4 h-4" />
-              </div>
               <span className="text-xl font-bold">AquaGrid</span>
             </motion.div>
             <motion.p 
@@ -40,11 +37,11 @@ export default function Footer() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="flex space-x-4"
             >
-              <a href="https://instagram.com/aquagrid" 
-                 className="text-gray-400 hover:text-white transition-colors duration-200"
+              <a href="https://linkedin.com/in/mohamed-zaidi" 
+                 className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
                  target="_blank"
                  rel="noopener noreferrer">
-                <Instagram className="w-5 h-5" />
+                <SiLinkedin className="w-5 h-5" />
               </a>
               <a href="https://wa.me/33753482970" 
                  className="text-gray-400 hover:text-green-400 transition-colors duration-200"
