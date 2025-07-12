@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiWhatsapp } from "react-icons/si";
-import aquagridImg from "@assets/AQUAGRID_1752319094546.jpeg";
+import aquagridImg from "../assets/aquagrid-hero.jpeg";
 
 // Déclaration TypeScript pour Calendly
 declare global {
