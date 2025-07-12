@@ -130,7 +130,7 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="border-t border-gray-800 pt-8 text-center text-gray-400"
         >
-          <p>&copy; 2024 AquaGrid. Tous droits réservés.</p>
+          <p>© 2025 AquaGrid. Tous droits réservés.</p>
         </motion.div>
       </div>
     </footer>
