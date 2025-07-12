@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { Brain, Smartphone, Leaf, CheckCircle } from "lucide-react";
-import applicationImg from "@assets/application_1752316731143.png";
-import application1Img from "@assets/application1_1752316731143.png";
 
 export default function SolutionSection() {
   return (
@@ -139,12 +137,13 @@ export default function SolutionSection() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="bg-gray-900 rounded-2xl p-1 shadow-lg"
                 >
-                  <div className="bg-white rounded-xl overflow-hidden">
-                    <img 
-                      src={applicationImg} 
-                      alt="Zone Management Interface" 
-                      className="w-full h-auto object-cover" 
-                    />
+                  <div className="bg-white rounded-xl overflow-hidden aspect-[9/16]">
+                    <div className="w-full h-full bg-gradient-to-br from-aqua-green-light to-white flex items-center justify-center">
+                      <div className="text-center p-4">
+                        <Smartphone className="w-8 h-8 text-aqua-green mx-auto mb-2" />
+                        <p className="text-gray-600 text-xs">Gestion par zones</p>
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
                 
@@ -156,12 +155,13 @@ export default function SolutionSection() {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="bg-gray-900 rounded-2xl p-1 shadow-lg mt-8"
                 >
-                  <div className="bg-white rounded-xl overflow-hidden">
-                    <img 
-                      src={application1Img} 
-                      alt="Analytics Interface" 
-                      className="w-full h-auto object-cover" 
-                    />
+                  <div className="bg-white rounded-xl overflow-hidden aspect-[9/16]">
+                    <div className="w-full h-full bg-gradient-to-br from-blue-50 to-white flex items-center justify-center">
+                      <div className="text-center p-4">
+                        <Brain className="w-8 h-8 text-aqua-blue mx-auto mb-2" />
+                        <p className="text-gray-600 text-xs">Analytics IA</p>
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
               </div>

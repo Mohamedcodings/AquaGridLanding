@@ -65,10 +65,11 @@ export default function TestimonialsSection() {
               </blockquote>
               
               <div className="flex items-center space-x-4">
-                {/* Device photo placeholder - using a generic IoT device image */}
-                <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
-                  <div className="w-8 h-8 bg-aqua-green rounded-full flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">AG</span>
+                {/* Device photo placeholder */}
+                <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center border-2 border-gray-300">
+                  <div className="text-center">
+                    <div className="w-6 h-6 bg-aqua-green rounded mx-auto mb-1"></div>
+                    <div className="text-xs text-gray-500">Device</div>
                   </div>
                 </div>
                 <div>
