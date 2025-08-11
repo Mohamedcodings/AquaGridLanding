@@ -1,0 +1,544 @@
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaGrid - Irrigation Intelligente par IA | Économisez jusqu'à 70% d'eau</title>
+    <meta name="description" content="AquaGrid révolutionne l'irrigation agricole avec l'IA. Système 100% autonome, -40% d'eau économisée en moyenne. Rejoignez les premiers utilisateurs.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', '-apple-system', 'sans-serif']
+                    },
+                    colors: {
+                        'aqua-green': {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-inter bg-white text-gray-800 leading-relaxed">
+    
+    <!-- @COMPONENT: Header -->
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-aqua-green-500 to-blue-500 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-tint text-white text-lg"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">AquaGrid</span>
+                </div>
+                
+                <!-- CTA Button -->
+                <button class="bg-aqua-green-500 hover:bg-aqua-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                        data-event="click:openCalendly" data-implementation="Should open Calendly booking widget">
+                    <i class="fas fa-calendar-check mr-2"></i>
+                    Prendre RDV
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: HeroSection -->
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-gray-50 to-aqua-green-50 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <h1 class="text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
+                            Optimisez chaque goutte.<br>
+                            <span class="text-aqua-green-500">Irriguez plus intelligemment.</span>
+                        </h1>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            AquaGrid révolutionne l'agriculture avec un système d'irrigation autonome basé sur l'IA. 
+                            Économisez jusqu'à 70% d'eau tout en maximisant vos rendements.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-aqua-green-500 hover:bg-aqua-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                data-event="click:openCalendly" data-implementation="Should open Calendly booking widget">
+                            <i class="fas fa-rocket mr-2"></i>
+                            Demander une démo
+                        </button>
+                        <button class="border-2 border-aqua-green-500 text-aqua-green-600 hover:bg-aqua-green-500 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
+                            <i class="fas fa-play mr-2"></i>
+                            Voir le fonctionnement
+                        </button>
+                    </div>
+                    
+                    <!-- Key Benefits -->
+                    <div class="grid grid-cols-3 gap-6 pt-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-aqua-green-500">-40%</div>
+                            <div class="text-sm text-gray-600">d'eau économisée</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-500">100%</div>
+                            <div class="text-sm text-gray-600">autonome</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-500">24/7</div>
+                            <div class="text-sm text-gray-600">surveillance IA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Modern irrigation system in agricultural field -->
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                         alt="Système d'irrigation moderne dans un champ agricole" 
+                         class="rounded-2xl shadow-2xl w-full h-auto">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                            <span class="text-sm font-medium text-gray-700">Système actif</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- @COMPONENT: SolutionPresentation -->
+    <!-- Solution Presentation -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Pourquoi AquaGrid change la donne ?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Notre technologie d'IA analyse en temps réel les besoins de vos cultures pour optimiser chaque irrigation.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-aqua-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-brain text-aqua-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Intelligence Artificielle</h3>
+                    <p class="text-gray-600">
+                        Algorithmes d'apprentissage automatique qui s'adaptent aux spécificités de vos cultures et conditions climatiques.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-water text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Économies d'eau</h3>
+                    <p class="text-gray-600">
+                        Réduction moyenne de 40% de la consommation d'eau grâce à une irrigation de précision ultra-ciblée.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-green-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Simplicité</h3>
+                    <p class="text-gray-600">
+                        Installation en moins de 2 heures et interface intuitive accessible depuis votre smartphone.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-gradient-to-r from-aqua-green-500 to-blue-500 rounded-2xl p-12 text-white text-center">
+                <h3 class="text-3xl font-bold mb-6">Installation et mise en service incluses</h3>
+                <p class="text-xl mb-8 opacity-90">
+                    Nos experts se déplacent chez vous pour une installation professionnelle et un accompagnement personnalisé.
+                </p>
+                <button class="bg-white text-aqua-green-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300"
+                        data-event="click:openCalendly" data-implementation="Should open Calendly booking widget">
+                    Planifier mon installation
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: SolutionPresentation -->
+
+    <!-- @COMPONENT: ImpactSection -->
+    <!-- Impact Statistics -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-aqua-green-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Impact mesurable sur votre exploitation</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Des résultats concrets validés par nos utilisateurs partenaires.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-5xl font-bold text-aqua-green-500 mb-4">-40%</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Consommation d'eau</h3>
+                    <p class="text-gray-600">Économie moyenne constatée sur l'ensemble de nos installations</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-5xl font-bold text-blue-500 mb-4">100%</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Autonome</h3>
+                    <p class="text-gray-600">Aucune intervention manuelle nécessaire une fois installé</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-5xl font-bold text-green-500 mb-4">2h</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Installation</h3>
+                    <p class="text-gray-600">Mise en service rapide par nos techniciens certifiés</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-5xl font-bold text-purple-500 mb-4">24/7</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Surveillance</h3>
+                    <p class="text-gray-600">Monitoring permanent et alertes en temps réel</p>
+                </div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- Agricultural technology dashboard showing data analytics -->
+                    <img src="https://pixabay.com/get/gfc640fefd892b0e5fb0def437e97c5916f16ede2ee6354d658595177867bf20d2ce2ea72cba227c14d41571f9e56d84857041ab608eded65db1c827b2c70bfc0_1280.jpg" 
+                         alt="Dashboard technologique agricole montrant l'analyse de données" 
+                         class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-gray-800">Technology qui s'adapte à vos besoins</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-aqua-green-500 text-xl mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">Capteurs intelligents :</strong>
+                                <span class="text-gray-600">Humidité du sol, météo, besoins des cultures</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-aqua-green-500 text-xl mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">IA prédictive :</strong>
+                                <span class="text-gray-600">Anticipation des besoins hydriques futurs</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-aqua-green-500 text-xl mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">Application mobile :</strong>
+                                <span class="text-gray-600">Contrôle et suivi depuis n'importe où</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-aqua-green-500 text-xl mt-1"></i>
+                            <div>
+                                <strong class="text-gray-800">Support 7j/7 :</strong>
+                                <span class="text-gray-600">Équipe technique disponible en permanence</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ImpactSection -->
+
+    <!-- @COMPONENT: TestimonialsSection -->
+    <!-- Customer Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Ils nous font confiance</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Découvrez les témoignages de nos agriculteurs partenaires qui ont transformé leur irrigation avec AquaGrid.
+                </p>
+            </div>
+            
+            <!-- @MAP: testimonials.map(testimonial => ( -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <!-- Professional farmer portrait in modern agricultural setting -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150" 
+                             alt="Portrait d'agriculteur professionnel" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800" data-mock="true">Pierre Dubois</h4>
+                            <p class="text-gray-600 text-sm" data-mock="true">Exploitation céréalière, Beauce</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4" data-mock="true">
+                        "Depuis l'installation d'AquaGrid, j'ai réduit ma consommation d'eau de 45% tout en améliorant mes rendements. L'investissement s'est amorti en une seule saison."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <!-- Professional female farmer in agricultural technology environment -->
+                        <img src="https://pixabay.com/get/g724daa6d2003a081a69a6f24b9f9a6f3b371cb407877cc18b2b59b224e81aa667c5b649a6f4f0574fe1993458a80577a5476bec39f9b41bba652f70487ae9400_1280.jpg" 
+                             alt="Portrait d'agricultrice professionnelle" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800" data-mock="true">Marie Lefort</h4>
+                            <p class="text-gray-600 text-sm" data-mock="true">Maraîchage bio, Provence</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4" data-mock="true">
+                        "L'interface est si intuitive ! Je peux surveiller mes cultures depuis mon téléphone et recevoir des alertes personnalisées. Une vraie révolution pour mon exploitation."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <!-- Professional farmer with modern agricultural equipment -->
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150" 
+                             alt="Portrait d'agriculteur avec équipement moderne" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-800" data-mock="true">Jean-Luc Martin</h4>
+                            <p class="text-gray-600 text-sm" data-mock="true">Viticulture, Languedoc</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4" data-mock="true">
+                        "L'installation a été rapide et l'équipe très professionnelle. Le système s'est adapté parfaitement à mes vignes. Je recommande vivement AquaGrid !"
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- @END_MAP )) -->
+            
+            <!-- Call to Action in Testimonials -->
+            <div class="text-center mt-12">
+                <p class="text-lg text-gray-600 mb-6">Rejoignez plus de 200 agriculteurs qui ont déjà optimisé leur irrigation</p>
+                <button class="bg-aqua-green-500 hover:bg-aqua-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                        data-event="click:openCalendly" data-implementation="Should open Calendly booking widget">
+                    <i class="fas fa-users mr-2"></i>
+                    Rejoindre la communauté
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: TestimonialsSection -->
+
+    <!-- @COMPONENT: CallToActionSection -->
+    <!-- Final Call to Action -->
+    <section class="py-20 bg-gradient-to-br from-aqua-green-500 to-blue-600 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="2" fill="white"/><circle cx="75" cy="75" r="2" fill="white"/><circle cx="75" cy="25" r="1" fill="white"/><circle cx="25" cy="75" r="1" fill="white"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>'); background-size: 100px 100px;"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-5xl font-bold mb-6">
+                    Faites partie des premiers utilisateurs
+                </h2>
+                <p class="text-2xl mb-8 opacity-90">
+                    Économisez jusqu'à 70% d'eau et optimisez vos rendements dès maintenant
+                </p>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-12">
+                    <div class="grid md:grid-cols-3 gap-8 mb-8">
+                        <div class="text-center">
+                            <div class="text-4xl font-bold mb-2">🚀</div>
+                            <h3 class="text-xl font-semibold mb-2">Démarrage immédiat</h3>
+                            <p class="opacity-90">Installation sous 48h après signature</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold mb-2">💰</div>
+                            <h3 class="text-xl font-semibold mb-2">ROI garanti</h3>
+                            <p class="opacity-90">Retour sur investissement en moins d'un an</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-4xl font-bold mb-2">🎯</div>
+                            <h3 class="text-xl font-semibold mb-2">Support premium</h3>
+                            <p class="opacity-90">Accompagnement personnalisé pendant 1 an</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-lg inline-block font-semibold text-lg mb-8">
+                        🔥 Offre limitée : -30% sur les 50 premières installations
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <button class="bg-white text-aqua-green-600 px-10 py-5 rounded-lg font-bold text-xl hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-xl"
+                            data-event="click:openCalendly" data-implementation="Should open Calendly booking widget">
+                        <i class="fas fa-calendar-check mr-3"></i>
+                        Réserver ma démo gratuite
+                    </button>
+                    <div class="text-lg opacity-90">
+                        ou appelez-nous : 
+                        <a href="tel:+33753482970" class="font-semibold underline hover:no-underline">+33 7 53 48 29 70</a>
+                    </div>
+                </div>
+                
+                <p class="mt-8 text-lg opacity-80">
+                    ✅ Démo de 30 minutes • ✅ Étude personnalisée • ✅ Devis gratuit • ✅ Sans engagement
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: CallToActionSection -->
+
+    <!-- @COMPONENT: Footer -->
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-aqua-green-500 to-blue-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-tint text-white"></i>
+                        </div>
+                        <span class="text-2xl font-bold">AquaGrid</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Révolutionnons l'agriculture avec une irrigation intelligente et durable.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-aqua-green-500 transition-colors duration-300"
+                           data-implementation="Link to Instagram profile">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-aqua-green-500 transition-colors duration-300"
+                           data-implementation="Link to LinkedIn profile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-aqua-green-500 transition-colors duration-300"
+                           data-implementation="Link to YouTube channel">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Products -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Solutions</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-aqua-green-400 transition-colors" data-implementation="Link to product page">Système AquaGrid Pro</a></li>
+                        <li><a href="#" class="hover:text-aqua-green-400 transition-colors" data-implementation="Link to services page">Installation & Support</a></li>
+                        <li><a href="#" class="hover:text-aqua-green-400 transition-colors" data-implementation="Link to maintenance page">Maintenance préventive</a></li>
+                        <li><a href="#" class="hover:text-aqua-green-400 transition-colors" data-implementation="Link to consulting page">Conseil agronomique</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ressources</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-aqua-green-400 transition-colors" data-implementation="Link to documentation">Documentation technique</a></li>
+                        <li><a href="#" class="hover:text-aqua-green-400 transition-colors" data-implementation="Link to case studies">Études de cas</a></li>
+                        <li><a href="#" class="hover:text-aqua-green-400 transition-colors" data-implementation="Link to blog">Blog agronomique</a></li>
+                        <li><a href="#" class="hover:text-aqua-green-400 transition-colors" data-implementation="Link to FAQ">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-aqua-green-400"></i>
+                            <a href="mailto:contact@aquagrid.fr" class="hover:text-aqua-green-400 transition-colors">contact@aquagrid.fr</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-aqua-green-400"></i>
+                            <a href="tel:+33753482970" class="hover:text-aqua-green-400 transition-colors">+33 7 53 48 29 70</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 text-aqua-green-400 mt-1"></i>
+                            <span>Paris, France<br>Service national</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400">&copy; 2024 AquaGrid. Tous droits réservés.</p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-aqua-green-400 transition-colors" data-implementation="Link to privacy policy">Politique de confidentialité</a>
+                        <a href="#" class="text-gray-400 hover:text-aqua-green-400 transition-colors" data-implementation="Link to terms of service">Conditions d'utilisation</a>
+                        <a href="#" class="text-gray-400 hover:text-aqua-green-400 transition-colors" data-implementation="Link to legal mentions">Mentions légales</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <!-- @FUNCTIONALITY: Calendly Integration Script -->
+    <script>
+        (function() {
+            // TODO: Implement Calendly integration
+            // This would typically load the Calendly widget when CTA buttons are clicked
+            
+            function openCalendly() {
+                // TODO: Initialize Calendly popup or redirect to booking page
+                console.log('Opening Calendly booking widget...');
+                // Example: window.open('https://calendly.com/aquagrid/demo', '_blank');
+            }
+            
+            // Attach event listeners to all Calendly buttons
+            document.addEventListener('DOMContentLoaded', function() {
+                const calendlyButtons = document.querySelectorAll('[data-event*="openCalendly"]');
+                calendlyButtons.forEach(button => {
+                    button.addEventListener('click', openCalendly);
+                });
+            });
+
+            // Smooth scroll for internal links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Header background on scroll
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.classList.add('bg-white/98');
+                } else {
+                    header.classList.remove('bg-white/98');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

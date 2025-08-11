@@ -57,7 +57,7 @@ export default function CTASection() {
               Faites partie des premiers utilisateurs et économisez jusqu'à <span className="text-aqua-green">70%</span>
             </h2>
             
-            <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Profitez de notre offre de lancement exclusive. Installation gratuite et 3 mois d'accompagnement personnalisé pour les 10 premiers agriculteurs qui nous rejoignent.</p>
+            <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Profitez de notre offre de lancement Premium : installation clé en main gratuite, accompagnement stratégique pendant 3 mois et suivi personnalisé pour maximiser la performance et la rentabilité de votre exploitation.</p>
           </motion.div>
           
           {/* Offer highlights */}
